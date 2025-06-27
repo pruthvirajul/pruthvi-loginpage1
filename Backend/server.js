@@ -5,7 +5,7 @@ const multer = require('multer');
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = 4149;
 
 // Middleware
 app.use(express.json());
@@ -14,9 +14,9 @@ app.use(cors());
 // PostgreSQL connection
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: 'postgres',
     database: 'login',
-    password: 'Veera@0134',
+    password: 'admin321',
     port: 5432,
 });
 
@@ -47,7 +47,7 @@ const initDatabase = async () => {
 initDatabase().then(() => {
     // Start the server only after the database is initialized
     app.listen(port, () => {
-        console.log(`Server running on http://localhost:${port}`);
+        console.log(`Server running on http://16.171.44.49:${port}`);
     });
 });
 
