@@ -47,7 +47,7 @@ const initDatabase = async () => {
 initDatabase().then(() => {
     // Start the server only after the database is initialized
     app.listen(port, () => {
-        console.log(`Server running on http://16.171.44.49:${port}`);
+        console.log(`Server running on http://13.48.136.225:${port}`);
     });
 });
 
